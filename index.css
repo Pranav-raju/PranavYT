@@ -1,0 +1,355 @@
+html,body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+::-webkit-scrollbar:hover
+{
+  border: 1px solid red;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb        
+{ 
+  border: 1px solid blue;
+  width: 0.5rem;
+  background-color: rgba(0, 0, 0,0.5);
+  border-radius: 1rem;
+ }
+.YT-header{
+    position: fixed;
+    z-index: 3;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 1rem 1.5rem ;
+    background-color: white;
+}
+.YT-header > .logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.YT-header>.logo-container>.menu-bar{
+    padding-right: 1.5rem;
+}
+
+.YT-header>.logo-container>.menu-bar>img{
+width: 1.5rem;
+height: 1.5rem;
+
+}
+.YT-header > .logo-container > .menu-bar{
+    display: flex;
+    flex-direction: row;
+}
+.YT-header > .logo-container > .logo-holder{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+}
+.YT-header > .logo-container > .logo-holder >img{
+    height:1.6rem;
+    width:auto;
+}
+
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45vw;
+    /* border:1px solid aqua; */
+}
+
+.searchbar > .search-input-holder
+{
+    border: 1px solid grey;
+    display: flex;
+
+    flex-grow: 1;
+}
+.searchbar >.search-input-holder>.search-input{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+   
+    /* padding:0.5rem 0; */
+
+}
+
+.searchbar >.search-input-holder>.search-input >input
+{   
+    flex-grow: 1;
+    padding: 0.75rem 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    
+}
+
+.searchbar >.search-input-holder> .search-icon-holder{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #f0f0f0;
+    border-left: 1px solid grey;
+  
+}
+
+.searchbar >.search-input-holder> .search-icon-holder >img
+{
+    width: auto;
+    height: 1.5rem;
+    
+}
+.searchbar >.voice-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    flex-direction: row;
+    flex-shrink: 0;
+    background-color: #f7f7f7;
+    padding: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    
+}
+
+.searchbar >.voice-search >img
+{
+    width: auto;
+    height: 1.5rem;
+}
+
+.header-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.header-icons > .action-icon
+{
+  box-sizing: border-box;
+  padding:1rem;
+}
+
+.header-icons > .action-icon.profile-dp 
+{
+    
+    width:2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-icons > .action-icon.profile-dp.profile-dp > .dp
+{
+    background-image: url("./img/profile.jpg");
+    background-size: contain;
+    background-position: 50% 50%;
+    width:2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    
+   
+    
+}
+
+.header-icons > .action-icons >img
+{
+    width: auto;
+    height: 1.5rem; 
+
+    
+}
+
+/* ############ Main -container ############################ */
+
+
+.main-container {
+  
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    width:100%;
+    height: calc(100vh - 6.25rem);
+    margin-top:6.25rem;
+    padding:0 1.5rem;
+    box-sizing: border-box;
+    
+   
+}
+
+
+/* ##################### left-main-nav */
+
+.main-container > .left-main-nav {
+
+    /* border: 1px solid green; */
+    width:20%;
+    z-index: 2;
+  
+    height: calc(100vh - 6.25rem);
+    position: fixed;
+    /* top:6.25rem; */
+    /* left:1.5rem; */
+    overflow-y: auto;
+
+
+}
+
+
+
+.left-main-nav > .menu-list 
+{
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0,0,0,0.25)
+}
+
+.left-main-nav > .menu-list > .left-item 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid grey; */
+    
+}
+
+.left-main-nav > .menu-list > .left-item:hover
+{
+    background-color: #e9e9e9;
+    
+}
+
+.left-main-nav > .menu-list > .left-item > .left-nav-icon
+{
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1.25rem 0.5rem 0rem;
+
+}
+
+.left-main-nav > .menu-list > .left-item > .left-nav-icon> img {
+    display: flex;
+    flex-direction: row;
+    width: 1.25rem;
+    height: 1.25rem;
+
+}
+
+.left-main-nav > .menu-list > .left-item > .left-navtitle {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-grow: 1;
+    /* border: 1px solid green; */
+    text-align: left;
+    padding: 0 0.5rem;
+    size: 0.75rem;
+    
+}
+.left-main-nav > .menu-list > .left-item > .left-navtitle >h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    height:1.5rem;
+    padding:0;
+    padding-top: 0.5rem;
+    margin:0;
+}
+
+.menu-list > .subhead > h4{
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
+    color: rgba(0,0,0,0.75);
+
+}
+.left-main-nav > .menu-list >.left-item >.left-nav-icon >img{
+     display: flex;
+     flex-direction: row;
+ 
+}
+
+.main-container > .right-main-view{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    margin-left:calc(20vw + 1.25rem ); 
+
+}
+
+
+.main-container > .right-main-view > .video-card {
+
+    border: 1px solid blue;
+    width: 25%;
+    display: flex;
+    
+    
+    flex-direction: column;
+
+   
+
+
+}
+.main-container > .right-main-view > .video-card > .thumbnail{
+   
+   width: 100%; 
+} 
+.main-container > .right-main-view > .video-card > .thumbnail > iframe{
+    width: 100%;
+}
+  
+.main-container > .right-main-view > .video-card > .vid-des{
+    font-family: 'Roboto' , sans-serif;
+    padding: 0rem;
+    
+
+}
+.main-container > .right-main-view > .video-card > .vid-des > .vid-title
+{   
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 0.25rem 0rem;
+    line-height: 1.25rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container > .right-main-view > .video-card > .vid-des > .vid-title > span:nth-child(2)
+{
+    padding: 0.5rem;
+}
+
+.main-container > .right-main-view > .video-card > .vid-des > .vid-info
+{
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0,0.85);
+    line-height: 1.25rem;
+}
+.dottoggle img{
+    visibility:hidden;
+}
+
+.video-card:hover .dottoggle img {
+    visibility: visible;
+}
+
+
+
