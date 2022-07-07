@@ -304,6 +304,8 @@ height: 1.5rem;
     display: flex;
     padding: 0.5rem;
     flex-direction: column;
+    text-decoration: none;
+    color:black;
 
    
 
