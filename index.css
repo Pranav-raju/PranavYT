@@ -283,24 +283,29 @@ height: 1.5rem;
      flex-direction: row;
  
 }
+/*####################Right-Main-view#################*/
+
 
 .main-container > .right-main-view{
     display: flex;
     flex-direction: row;
     width:80%;
     margin-left:calc(20vw + 1.25rem ); 
+    box-sizing: border-box;
+    flex-wrap: wrap;
 
 }
 
 
 .main-container > .right-main-view > .video-card {
 
-    border: 1px solid blue;
-    width: 25%;
+    /*border: 1px solid blue;*/
+    width: 23%;
     display: flex;
-    
-    
+    padding: 0.5rem;
     flex-direction: column;
+    text-decoration: none;
+    color:black;
 
    
 
